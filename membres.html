@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Membres</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Connexion Membres</h2>
+
+<input id="user" placeholder="Nom">
+<input id="pass" type="password" placeholder="Mot de passe">
+<button onclick="login()">Connexion</button>
+
+<p id="msg"></p>
+
+<script>
+function login() {
+  let u = document.getElementById("user").value;
+  let p = document.getElementById("pass").value;
+
+  if(u === "joueur" && p === "1234") {
+    document.getElementById("msg").textContent = "Bienvenue membre du FC Écrouves ⚽";
+  } else {
+    document.getElementById("msg").textContent = "Identifiants incorrects";
+  }
+}
+</script>
+
+</body>
+</html>
