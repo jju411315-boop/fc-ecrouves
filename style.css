@@ -1,38 +1,21 @@
+/* === STYLE GLOBAL === */
 body {
-  font-family: Arial;
-  background: #fff;
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/fond.jpg'); /* fond personnalisé */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
 }
 
-header {
-  background: red;
-  color: white;
-  padding: 15px;
-}
-
-nav a {
-  color: white;
-  margin-right: 10px;
-  text-decoration: none;
-}
-
-.hero {
-  padding: 40px;
-  text-align: center;
-  background: #f2f2f2;
-}
-
-button {
-  background: red;
-  color: white;
-  padding: 10px;
-  border: none;
-}
+/* === MENU FIXE === */
 .menu {
     display: flex;
     justify-content: center;
     background-color: #c00; /* rouge */
-    padding: 10px;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -43,8 +26,37 @@ button {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .menu a:hover {
     text-decoration: underline;
+}
+
+/* === HEADER AVEC LOGO === */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); /* clair et semi-transparent */
+    padding: 20px;
+    gap: 15px;
+}
+
+header .logo {
+    height: 60px;
+}
+
+/* === SECTIONS === */
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* semi-transparent pour lisibilité */
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+.intro h2 {
+    color: #c00;
+    margin-bottom: 10px;
 }
